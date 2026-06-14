@@ -11,20 +11,19 @@ import {
 
 export default function Login() {
   return (
-    <ImageBackground
-      source={require("..//assets/images/background.jpg")}
-      style={styles.background}
-      resizeMode="cover"
-    >
-      <StatusBar barStyle="light-content" />
-
-      <View style={styles.overlay}>
+    <View style={styles.overlay}>
         <Image
           source={require("../assets/images/logo.png")}
           style={styles.logo}
           resizeMode="contain"
         />
-
+        
+    <ImageBackground
+      source={require("../assets/images/background.jpg")}
+      style={styles.background}
+      resizeMode="cover"
+    >
+      <StatusBar barStyle="light-content" />
         <View style={styles.form}>
           <TextInput
             placeholder="Digite seu telefone (apenas números)"
